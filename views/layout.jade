@@ -1,0 +1,13 @@
+!!! 5
+html(ng-app)
+  head
+    link(rel='stylesheet', href='//current.bootstrapcdn.com/bootstrap-v204/css/bootstrap-combined.min.css')
+    != css('application')
+  body
+    .container
+      .row
+        .span4.offset4
+          !{body}
+
+    script(src='http://code.angularjs.org/angular-1.0.0rc4.min.js')
+    != js('application')

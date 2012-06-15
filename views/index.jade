@@ -1,0 +1,22 @@
+h1 Todo
+div(ng-controller="TodoCtrl")
+  p
+    {{remaining()}} of {{todos.length}} remaining
+
+  table.table.table-striped: tbody
+    tr(ng-repeat="todo in todos")
+      td(width='10px')
+        input(type="checkbox", ng-model="todo.done")
+      td
+        span(class="done-{{todo.done}}")  {{todo.text}}
+
+  a.btn.btn-danger.pull-right(href="", ng-click="archive()")
+    i.icon-trash.icon-white
+
+  form.form-inline(ng-submit="addTodo()")
+    .control-group
+      .controls
+        .input-append
+          input.input-medium(type="text", ng-model="todoText", placeholder="add new todo here")
+          button.btn.btn-success(type="submit")
+            i.icon-plus
