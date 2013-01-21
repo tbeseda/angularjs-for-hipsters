@@ -4,10 +4,8 @@ html(ng-app)
     link(rel='stylesheet', href='//current.bootstrapcdn.com/bootstrap-v204/css/bootstrap-combined.min.css')
     != css('application')
   body
-    .container
-      .row
-        .span4.offset4
-          !{body}
+    .container: .row: .span4.offset4
+      block content
 
-    script(src='http://code.angularjs.org/angular-1.0.0rc4.min.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js')
     != js('application')

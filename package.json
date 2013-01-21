@@ -1,11 +1,11 @@
 {
-    "name": "AngularJsNode"
-  , "version": "0.0.1"
-  , "dependencies": {
-      "coffee-script": "*"
-    , "connect-assets": "*"
-    , "express": "*"
-    , "jade": "*"
-    , "stylus": "*"
+  "name": "AngularJsForHipsters",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "~1.4.0",
+    "connect-assets": "~2.3.3",
+    "express": "~3.0.6",
+    "jade": "~0.28.1",
+    "stylus": "~0.32.0"
   }
 }
